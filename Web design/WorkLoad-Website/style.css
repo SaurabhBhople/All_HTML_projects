@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    position: relative;
+    color: #ffffff;
+}
+
+.hero-section-image {
+    height: 50vh;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    background: #222;
+    transform-style: preserve-3d;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+   
+}
+.section-heading{
+    color: #c83660;
+}
+
+.day{
+    background: #e2e2e2;
+    padding: 0;
+    margin: 0;
+}
+.day .nav-item a{
+    text-decoration: none;
+    color: #c83660;
+}
+.day .nav-item:hover{
+    padding: 0;
+    margin: 0;
+    background: #c83660;
+    color: #e2e2e2;
+}
+.day .nav-item a:hover{
+    color: #e2e2e2;
+}
+.img-section {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.img-section::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    transform: translateZ(-1px) scale(2.2);
+    filter: blur(2px);
+}
+
+.class-item {
+    background: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.class-item:hover {
+    background: #c83660;
+    color: #ffffff;
+}
+
+.class-item span {
+    color: #aeaeae;
+}
+
+.service-card:hover{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+/* form styles */
+.form-group .form-control:hover{
+    border-color: #c83660;
+}
+/* header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.6s;
+    z-index: 1000;
+}
+header.sticky{
+    padding: 20px 100px;
+    background: #fff;
+}
+header.sticky .logo,
+        header.sticky ul li a{
+            color: #000;
+        } */
+
+
+
+/*     
+.hero-section-image {
+    height: 300px;
+    
+    perspective: 20px;
+}
+
+.hero-section-image .wrapper{
+   
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.hero-section-image .background{
+    position: fixed;
+    object-fit: cover;
+    transform: translateZ(-10px) scale(2);
+    z-index: -2;
+}
+*/

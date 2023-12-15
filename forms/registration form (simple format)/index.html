@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login Form</title>
+    <link rel="icon" href="./favicon.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+    <form action="" class="form">
+        <fieldset class="main-fieldset">
+            <legend style="font-size: 22px;" class="legend-main"><strong>Student Data</strong></legend>
+            <fieldset class="fieldset-personal">
+                <legend class="legend">Personal Details</legend>
+                    <div class="user-input-box">
+                        <label for="fname" class="label">First Name : </label>
+                        <input type="text" name="fname" placeholder="Enter your First Name" maxlength="10" pattern="[a-zA-Z]*" required>
+                    </div>
+                    <div class="user-input-box">
+                        <label for="lname" class="label">Last Name : </label>
+                        <input type="text" name="lname" placeholder="Enter your Last Name" maxlength="10" pattern="[a-zA-Z]*" required>
+                    </div>
+                    <div class="user-input-box">
+                        <label for="Email" class="label">Email ID : </label>
+                        <input type="email" name="Email" placeholder="abc@gmail.com" required>
+                    </div>
+                    <div class="user-input-box">
+                        <label for="mobileNumber" class="label">Mobile Number : </label>
+                        <input type="text" name="mobileNumber" placeholder="Enter Mobile Number" maxlength="10" pattern="[6789]\d{9}" required>
+                    </div>
+                    <div class="user-input-box">
+                        <label for="DOB" class="label">Date of Birth : </label>
+                        <input type="date" >
+                    </div>
+                    <div class="gender">
+                        <span class="gender-title">Gender : </span>
+                        <div class="gender-category">
+                            <input type="radio" name="gen">
+                            <label for="Male">Male</label>
+                            <input type="radio" name="gen">
+                            <label for="Female">Female</label> 
+                        </div>
+                    </div>
+            </fieldset>
+            
+            <fieldset class="fieldset-qualification">
+                <legend class="legend">Qualification Details</legend>
+                <div class="qualification">
+                    <span class="qualification-title">Select Qualification : </span>
+                    <div class="qualification-category">
+                        <input type="checkbox" name="q" required>
+                        <label for="q">High School(10<sup>th</sup>)</label><br>
+                        <input type="checkbox" name="q" required>
+                        <label for="q">Higher School(12<sup>th</sup>)</label><br>
+                        <input type="checkbox" name="q" required>
+                        <label for="q">Graduation (Bachelors)</label><br>
+                        <input type="checkbox" name="q" required>
+                        <label for="q">Post Graduation (Masters)</label><br>
+                    </div>
+                </div>
+                <div class="selection-menus">
+                    <span class="branch-title">Branch : </span>
+                        <select name="branch" class="select">
+                            <option value=""disabled selected>Select Branch</option>
+                            <option value=" com sci">Computer Science</option>
+                            <option value="Information Technology">Information Technology</option>
+                            <option value="Commerce">Commerce</option>
+                            <option value="Arts">Arts</option>
+                            <option value="Electricals">Electricals</option>
+                            <option value="Electronic and tele communication">Electronic and tele commpunication</option>
+                        </select>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset-address">
+                <legend class="legend">Address Details</legend>
+                <div class="address-area">
+                    <span class="address-title">Address : </span>
+                    <textarea name="address" rows="5" cols="40" placeholder="Enter your Address" class="textarea"></textarea> 
+                </div>
+                <div class="user-input-box">
+                    <label for="city" class="label">City : </label>
+                    <input type="text" name="city" placeholder="Pune" required> 
+                </div>
+                <div class="selection-menus">
+                    <span class="states-title">States : </span>
+                    <select name="state"  class="select" required >
+                        <option value="" disabled selected>Select State</option>
+                        <option value="MH">Maharashtra</option>
+                        <option value="MP">Madhya Pradesh</option>
+                        <option value="HR">Haryana</option>
+                        <option value="AP">Arunachal Pradesh</option>
+                        <option value="HP">Himachal Pradesh</option>
+                        <option value="RJ">Rajasthan</option>
+                        <option value="GJ">Gujarat</option>
+                        <option value="UP">Uttar Pradesh</option>
+                    </select>
+                </div>
+                <div class="user-input-box">
+                    <label for="country" class="label">Country</label>
+                    <input type="text" name="Country" placeholder="India" readonly>  
+                </div>
+                <div class="user-input-box">
+                    <label for="pin code" class="label">PIN Code</label>
+                    <input type="text" name="pin code" placeholder="443102" max="6" pattern="[123456789]\d{5}"> 
+                </div>
+            </fieldset>
+            <div class="form-submit-btn">
+                <input type="submit" value="Submit Data" class="button">
+                <input type="reset" value="Reset" class="button">
+            </div>
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document1</title>
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+</head>
+<body>
+    <div class="row">
+        <div class="large-6 columns">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <h2>Slide 1</h2>
+            </div>
+            <div class="item">
+              <h2>Slide 2</h2>
+            </div>
+            <div class="item">
+              <h2>Slide 3</h2>
+            </div>
+            <div class="item">
+              <h2>Slide 4</h2>
+            </div>
+            <div class="item">
+              <h2>Slide 5</h2>
+            </div>
+            <div class="item">
+              <h2>Slide 6</h2>
+            </div>
+            <div class="item">
+              <h2>Slide 7</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+    <script>
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        margin: 20,
+        loop: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      })
+
+    </script>
+
+</body>
+</html>

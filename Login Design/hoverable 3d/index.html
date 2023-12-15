@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludiflex | Login & Registration</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- boxicons link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="nav-logo">
+                <p>LOGO .</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#" class="link active">Home</a></li>
+                    <li><a href="#" class="link">Blog</a></li>
+                    <li><a href="#" class="link">Services</a></li>
+                    <li><a href="#" class="link">About</a></li>
+                    <li><a href="#" class="link">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn" onclick="loginFunction()">Sign In</button>
+                <button class="btn" id="registerBtn" onclick="registerFunction()">Sign Up</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class='bx bx-menu' onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <!---------------- Form Box --------------->
+        <div class="form-box">
+            <!-- Registration form -->
+            <div class="register-container" id="register">
+                <div class="top">
+                    <!-- <span>Have an account?<a href="#" onclick="loginFunction()">Login</a></span> -->
+                    <header>Sign Up</header>
+                </div>
+                <div class="two-forms">
+                    <div class="input-box fname">
+                        <input type="text" class="input-field" placeholder="Firstname">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box lname">
+                        <input type="text" class="input-field" placeholder="Lastname">
+                        <i class="bx bx-user"></i>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Email">
+                    <i class="bx bx-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Register">
+                </div>
+                <div class="top">
+                    <span>Have an account?<a href="#" onclick="loginFunction()">Login</a></span>
+                    <!-- <header>Sign Up</header> -->
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="register-check">
+                        <label for="register-check"> Remenber Me</label>
+                    </div>
+                    <div class="two">
+                        <label for=""><a href="#">Terms & Conditions</a></label>
+                    </div>
+                </div>
+            </div>
+            <!-- Login form -->
+            <div class="login-container" id="login">
+                <div class="top">
+                    <!-- <span>Don't have an account?<a href="#" onclick="registerFunction()">Sign Up</a></span> -->
+                    <header>Login</header>
+                </div>
+                <!-- <div class="two-forms">
+                    <div class="input-box fname">
+                        <input type="text" class="input-field" placeholder="Firstname">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box lname">
+                        <input type="text" class="input-field" placeholder="Lastname">
+                        <i class="bx bx-user"></i>
+                    </div>
+                </div> -->
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Username or Email">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Sign In">
+                </div>
+                <div class="top">
+                    <span>Don't have an account?<a href="#" onclick="registerFunction()">Sign Up</a></span>
+                    <!-- <header>Login</header> -->
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="login-check">
+                        <label for="login-check"> Remenber Me</label>
+                    </div>
+                    <div class="two">
+                        <label for=""><a href="#">|Forget Password?</a></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var loginBtn = document.getElementById('loginBtn');
+        var registerBtn = document.getElementById('registerBtn');
+        var login = document.getElementById('login');
+        var register = document.getElementById('register');
+
+        function loginFunction() {
+            login.style.left = "4px";
+            register.style.right = "-520px";
+            loginBtn.className += " white-btn";
+            registerBtn.className = "btn";
+            login.style.opacity = 1;
+            register.style.opacity = 0;
+        }
+        function registerFunction() {
+            login.style.left = "-510px";
+            register.style.right = "5px";
+            loginBtn.className = " btn";
+            registerBtn.className += " white-btn";
+            login.style.opacity = 0;
+            register.style.opacity = 1;
+        }
+
+    </script>
+    <script>
+        function myMenuFunction() {
+            var menus = document.getElementById("navMenu");
+            if (menus.className === "nav-menu") {
+                menus.className += " responsive";
+            }
+            else {
+                menus.className = "nav-menu";
+            }
+        }
+    </script>
+
+    <script type="text/javascript" src="./Js/vanilla-tilt.js"></script>
+    <script type="text/javascript" src="./Js/script.js"></script>
+</body>
+
+</html>

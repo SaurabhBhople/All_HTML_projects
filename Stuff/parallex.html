@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallex Effect</title>
+    <style>
+        html{
+            height: 100vh;
+            overflow: hidden;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            background: #222;
+            perspective: 1px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            transform-style: preserve-3d;
+        }
+        .section1, .section2{
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+        .section1::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-image: url("../WorkLoad-Website/images/website/bg_1.jpg");
+            background-size: cover;
+            transform: translateZ(-1px) scale(2.2);
+            filter: blur(2px);
+        }
+        .section2{
+            margin: 50px;
+            /* background: url("../WorkLoad-Website/images/website/bg_3.jpg"); */
+        }
+        .text{
+            top: 10%;
+            left: 50%;
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 15vw;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 5px 5px 70px rgba(255, 255, 255, 0.3);
+            transform: scale(1,1.1) translate(-50%, 10%);
+        }  
+        /* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    
+} */
+.container{
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+
+.main-fieldset{
+    padding: 5px 10px;
+    border: none;
+}
+
+.main-fieldset .legend-main{
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.fieldset-personal, .fieldset-qualification, .fieldset-address{
+    border: 2px inset white;
+    width: 95%;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: content-box;
+    border-radius: 10px;
+}
+
+.main-fieldset .legend{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: white;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: start;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label{
+    width: 40%;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px 0;
+    padding-right: 10px;
+}
+
+.user-input-box input{
+    height: 40px;
+    width: 60%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid gray;
+    padding: 0 10px;
+}
+
+/* 
+.qualification-title{
+    vertical-align: top;
+}
+
+.gender-category,
+.qualification-category{
+    display: inline-block;
+    margin: 15px 0;
+    color: white;
+    padding-left: 55px;
+}
+.gender-category{
+    padding-left: 135px;
+}
+.gender-category label,
+.gender-category input,
+.qualification-category label,
+.qualification-category input{
+    cursor: pointer;
+} */ 
+.gender, .qualification{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.gender .gender-title, .qualification .qualification-title,
+.address-area .address-title{
+    width: 40%;
+    color: white;
+    font-size: 16px;
+    padding-right: 15px;
+} 
+
+.gender .gender-category,
+.qualification .qualification-category{
+    width: 60%;
+    color: white;
+    padding: 10px 0 15px 10px;
+}
+
+.gender .gender-category label{
+    margin: 0 10px 0px 5px;
+}
+.qualification .qualification-category label{
+    margin: 0 20px 10px 5px;
+}
+
+
+.selection-menus .branch-title,
+.selection-menus .states-title
+{
+    color: white;
+    font-size: 16px;
+    width: 40%;
+}
+
+.selection-menus .select{
+    width: 60%;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+.address-area, .selection-menus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.address-area .textarea{
+    width: 60%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.form-submit-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 5%;
+}
+
+.form-submit-btn input{
+    width: 40%;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    background: rgba(40, 49, 58, 0.7);
+}
+
+.form-submit-btn input:hover{
+    background: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .user-input-box label, .user-input-box input, .gender .gender-title, .qualification .qualification-title,
+    .address-area .address-title .selection-menus .branch-title, .selection-menus .states-title, .selection-menus .select, .address-area .address-title, .address-area .textarea {
+        width: 100%;
+    }
+    .form-submit-btn .button{
+        width: 100%;
+        margin: 5px 0 5px 0;
+        padding: 10px;
+    }
+    .user-input-box label, .selection-menus .branch-title, .selection-menus .states-title, .address-area .address-title{
+        padding-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .gender .gender-category{
+        width: 0%;
+        display: inline-flex;
+    }
+} 
+    </style>
+</head>
+<body>
+    <div class="section1">
+        <div class="text">Prallex Effect</div>
+    </div>
+    <div class="section2">
+        <div class="container">
+            <form action="" class="form">
+                <fieldset class="main-fieldset">
+                    <legend style="font-size: 22px;" class="legend-main"><strong>Student Data</strong></legend>
+                    <fieldset class="fieldset-personal">
+                        <legend class="legend">Personal Details</legend>
+                            <div class="user-input-box">
+                                <label for="fname" class="label">First Name : </label>
+                                <input type="text" name="fname" placeholder="Enter your First Name" maxlength="10" pattern="[a-zA-Z]*" required>
+                            </div>
+                            <div class="user-input-box">
+                                <label for="lname" class="label">Last Name : </label>
+                                <input type="text" name="lname" placeholder="Enter your Last Name" maxlength="10" pattern="[a-zA-Z]*" required>
+                            </div>
+                            <div class="user-input-box">
+                                <label for="Email" class="label">Email ID : </label>
+                                <input type="email" name="Email" placeholder="abc@gmail.com" required>
+                            </div>
+                            <div class="user-input-box">
+                                <label for="mobileNumber" class="label">Mobile Number : </label>
+                                <input type="text" name="mobileNumber" placeholder="Enter Mobile Number" maxlength="10" pattern="[6789]\d{9}" required>
+                            </div>
+                            <div class="user-input-box">
+                                <label for="DOB" class="label">Date of Birth : </label>
+                                <input type="date" >
+                            </div>
+                            <div class="gender">
+                                <span class="gender-title">Gender : </span>
+                                <div class="gender-category">
+                                    <input type="radio" name="gen">
+                                    <label for="Male">Male</label>
+                                    <input type="radio" name="gen">
+                                    <label for="Female">Female</label> 
+                                </div>
+                            </div>
+                    </fieldset>
+                    
+                    <fieldset class="fieldset-qualification">
+                        <legend class="legend">Qualification Details</legend>
+                        <div class="qualification">
+                            <span class="qualification-title">Select Qualification : </span>
+                            <div class="qualification-category">
+                                <input type="checkbox" name="q" required>
+                                <label for="q">High School(10<sup>th</sup>)</label><br>
+                                <input type="checkbox" name="q" required>
+                                <label for="q">Higher School(12<sup>th</sup>)</label><br>
+                                <input type="checkbox" name="q" required>
+                                <label for="q">Graduation (Bachelors)</label><br>
+                                <input type="checkbox" name="q" required>
+                                <label for="q">Post Graduation (Masters)</label><br>
+                            </div>
+                        </div>
+                        <div class="selection-menus">
+                            <span class="branch-title">Branch : </span>
+                                <select name="branch" class="select">
+                                    <option value=""disabled selected>Select Branch</option>
+                                    <option value=" com sci">Computer Science</option>
+                                    <option value="Information Technology">Information Technology</option>
+                                    <option value="Commerce">Commerce</option>
+                                    <option value="Arts">Arts</option>
+                                    <option value="Electricals">Electricals</option>
+                                    <option value="Electronic and tele communication">Electronic and tele commpunication</option>
+                                </select>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset-address">
+                        <legend class="legend">Address Details</legend>
+                        <div class="address-area">
+                            <span class="address-title">Address : </span>
+                            <textarea name="address" rows="5" cols="40" placeholder="Enter your Address" class="textarea"></textarea> 
+                        </div>
+                        <div class="user-input-box">
+                            <label for="city" class="label">City : </label>
+                            <input type="text" name="city" placeholder="Pune" required> 
+                        </div>
+                        <div class="selection-menus">
+                            <span class="states-title">States : </span>
+                            <select name="state"  class="select" required >
+                                <option value="" disabled selected>Select State</option>
+                                <option value="MH">Maharashtra</option>
+                                <option value="MP">Madhya Pradesh</option>
+                                <option value="HR">Haryana</option>
+                                <option value="AP">Arunachal Pradesh</option>
+                                <option value="HP">Himachal Pradesh</option>
+                                <option value="RJ">Rajasthan</option>
+                                <option value="GJ">Gujarat</option>
+                                <option value="UP">Uttar Pradesh</option>
+                            </select>
+                        </div>
+                        <div class="user-input-box">
+                            <label for="country" class="label">Country</label>
+                            <input type="text" name="Country" placeholder="India" readonly>  
+                        </div>
+                        <div class="user-input-box">
+                            <label for="pin code" class="label">PIN Code</label>
+                            <input type="text" name="pin code" placeholder="443102" max="6" pattern="[123456789]\d{5}"> 
+                        </div>
+                    </fieldset>
+                    <div class="form-submit-btn">
+                        <input type="submit" value="Submit Data" class="button">
+                        <input type="reset" value="Reset" class="button">
+                    </div>
+                </fieldset>
+            </form>
+            </div>
+    </div>
+</body>
+</html>

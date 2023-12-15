@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data</title>
+    <link rel="icon" href="./favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <fieldset><legend><strong>Student Data</strong></legend>
+        <table>
+            <caption>Personal Information</caption>
+            <colgroup>
+                <col span="1" style="width: 30%; margin-left:30px;">
+                <col span="1" style="width: 40%;">
+            </colgroup>
+            <tr>
+                <th><label for="fname">First Name : </label></th>
+                <td><input type="text" name="fname" placeholder="Enter your First Name" required maxlength="10" pattern="[a-zA-Z]*"></td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="lname">Last Name : </label>
+                </th>
+                <td>
+                    <input type="text" name="lname" placeholder="Enter your Last Name" required maxlength="10" pattern="[a-zA-Z]*">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="Email">Email ID : </label>
+                </th>
+                <td>
+                    <input type="text" name="Email" placeholder="abc@email.com" required pattern="^\S*$">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="mobile">Mobile Number</label>
+                </th>
+                <td>
+                    <button disabled>+91</button>
+                    <input type="number" maxlength="10" pattern="[6789]\d{9}" required>                    
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="gender">Gender : </label>
+                </th>
+                <td>
+                    <input type="radio" name="gen">
+                    <label for="Male">Male</label>
+                    <input type="radio" name="gen">
+                    <label for="Female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="DOB">Date of Birth : </label>
+                </th>
+                <td>
+                    <input type="date" required>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="Qualification">Qualification : </label> 
+                </th>
+                <td>
+                    <input type="radio" name="q">
+                    <label for="q">High School(10<sup>th</sup>)</label><br>
+                    <input type="radio" name="q">
+                    <label for="q">Higher School(12<sup>th</sup>)</label><br>
+                    <input type="radio" name="q">
+                    <label for="q">Graduation (Bachelors)</label><br>
+                    <input type="radio" name="q">
+                    <label for="q">Post Graduation (Masters)</label><br>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="Branch">Branch : </label>
+                </th>
+                <td>
+                    <select name="branch" id="field" required>
+                        <option value=""disabled selected>Select Branch</option>
+                        <option value=" com sci">Computer Science</option>
+                        <option value="Information Technology">Information Technology</option>
+                        <option value="Commerce">Commerce</option>
+                        <option value="Arts">Arts</option>
+                        <option value="Electricals">Electricals</option>
+                        <option value="Electronic and tele communication">Electronic and tele-commpunication</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="address">Address : </label>
+                </th>
+                <td>
+                    <textarea name="address" rows="3" cols="50" placeholder="Enter your Address" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="city">City : </label>
+                </th>
+                <td>
+                    <input type="text" name="city" placeholder="Enter your City name" required>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="state">State : </label>
+                </th>
+                <td>
+                    <select name="state" id="states" required>
+                        <option value="" disabled selected>Select State</option>
+                        <option value="AP">Arunachal Pradesh</option>
+                        <option value="GJ">Gujarat</option>
+                        <option value="HR">Haryana</option>
+                        <option value="HP">Himachal Pradesh</option>
+                        <option value="MH">Maharashtra</option>
+                        <option value="MP">Madhya Pradesh</option>
+                        <option value="RJ">Rajasthan</option>
+                        <option value="UP">Uttar Pradesh</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="country">Country : </label>
+                </th>
+                <td>
+                    <input type="text" name="Country" placeholder="India" readonly>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="pin code">PIN Code : </label>
+                </th>
+                <td>
+                    <input type="number" name="pin code" placeholder="443102">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit Data" style="margin-right: 20px; padding: 5px;">
+                    <input type="reset" value="Reset" style="margin-right: 20px; padding: 5px;">
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+    </form>
+</body>
+</html>

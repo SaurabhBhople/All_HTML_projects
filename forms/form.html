@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <fieldset><legend>Student Details</legend>
+            <table class="table">
+                <caption>Personal Information</caption>
+                <colgroup>
+                    <col span="1" style="width: 40%; margin-left: 30px;">
+                    <col span="1" style="width: 50%;">
+                </colgroup>
+                <tr>
+                    <th><label for="fName" class="label">First Name : </label></th>
+                    <td><input type="text" class="input" pattern="[a-zA-Z]*" maxlenght="10" required></td>
+                </tr>
+                <tr>
+                    <th>
+                    <label for="lName" class="label">Last Name : </label>
+                    </th>
+                    <td>
+                        <input type="text" class="input" pattern="[a-zA-Z]*" maxlenght="10" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="email">Email Id : </label>
+                    </th>
+                    <td>
+                        <input type="text" name="email" class="input" required pattern="^\S*$">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="mobileNo" class="label">Mobile Number : </label>
+                    </th>
+                    <td>
+                        <button disabled>+91</button>
+                        <input type="text" max="10" pattern="[789]\d{9}" class="input" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                    <label for="gender" class="label">Gender : </label>
+                    </th>
+                    <td>
+                        <input type="radio" class="radio" name="gen">
+                        <label for="male">Male</label>
+                        <input type="radio" class="radio" name="gen">
+                        <label for="female">Female</label>
+                        <input type="radio" class="radio" name="gen">
+                        <label for="other">Others</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="DOB">Date of Birth : </label>
+                    </th>
+                    <td>
+                        <input type="date" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="Qualification">Qualification : </label> 
+                    </th>
+                    <td>
+                        <input type="radio" name="q">
+                        <label for="q">High School(10<sup>th</sup>)</label><br>
+                        <input type="radio" name="q">
+                        <label for="q">Higher School(12<sup>th</sup>)</label><br>
+                        <input type="radio" name="q">
+                        <label for="q">Graduation (Bachelors)</label><br>
+                        <input type="radio" name="q">
+                        <label for="q">Post Graduation (Masters)</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="Branch">Branch : </label>
+                    </th>
+                    <td>
+                        <select name="branch" id="field" required>
+                            <option value=""disabled selected>Select Branch</option>
+                            <option value=" com sci">Science</option>
+                            <option value="Information Technology">Information Technology</option>
+                            <option value="Commerce">Commerce</option>
+                            <option value="Arts">Arts</option>
+                            <option value="compScience">Computer Science</option>
+                            <option value="Electricals">Electricals</option>
+                            <option value="mechanicals">Mechanicals</option>
+                            <option value="Civil">Civil</option>
+                            <option value="Electronic and tele communication">Electronic and tele-commpunication</option>
+                        </select>
+                        </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="address">Address : </label>
+                    </th>
+                    <td>
+                        <textarea name="address" rows="3" cols="30" placeholder="Enter your Address" required class="input"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="city">City : </label>
+                    </th>
+                    <td>
+                        <input type="text" name="city" class="input" placeholder="Enter your City name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="state">State : </label>
+                    </th>
+                    <td>
+                        <select name="state" id="states" required>
+                            <option value="" disabled selected>Select State</option>
+                            <option value="AP">Arunachal Pradesh</option>
+                            <option value="GJ">Gujarat</option>
+                            <option value="HR">Haryana</option>
+                            <option value="HP">Himachal Pradesh</option>
+                            <option value="MH">Maharashtra</option>
+                            <option value="MP">Madhya Pradesh</option>
+                            <option value="RJ">Rajasthan</option>
+                            <option value="UP">Uttar Pradesh</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="country">Country : </label>
+                    </th>
+                    <td>
+                        <input type="text" name="Country" value="India" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="pin code">PIN Code : </label>
+                    </th>
+                    <td>
+                        <input type="text" name="pin code" max="6" pattern="[4]\d{5}" placeholder="443102" class="input" required>
+                    </td>
+                </tr>
+                <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit Data" style="margin-right: 20px; padding: 5px;">
+                    <input type="reset" value="Reset" style="margin-right: 20px; padding: 5px;">
+                </td>
+            </tr>
+            </table>
+            
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

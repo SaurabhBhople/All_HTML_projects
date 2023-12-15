@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Work-Out</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap 5 css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- Bootstrap 5 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- owl carousel link -->
+    <link rel="stylesheet"
+        href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="10">
+    <div class="d-flex flex-column overflow-hidden h-100">
+        <header>
+            <nav class="row d-flex align-items-center navbar navbar-expand-lg">
+                <!-- logo -->
+                <div class="col-lg-4 col-12 text-center">
+                    <a href="#" class="navbar-brand fs-3 fw-bold">
+                        WORKOUT<span class="text-danger">.</span>
+                    </a>
+                </div>
+                <!-- toggle button -->
+                <button class="navbar-toggler border-0 shadow-none position-absolute text-end" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- <button class="navbar-toggler position-relative text-end top-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navLinks">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <!-- sidebar & nav link -->
+                <div class="col-lg-8 col-12">
+                    <div class="row offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <!-- sidebar Header -->
+                        <div class="offcanvas-header text-dark border-bottom">
+                            <h5 class="offcanvas-title fs-4 fw-bold" id="offcanvasNavbarLabel">WORKOUT Menus</h5>
+                            <!-- Close nav button -->
+                            <button type="button" class="btn-close btn-close-dark shadow-none"
+                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <!-- sidebar body nav items -->
+                        <div class="offcanvas-body d-flex flex-column flex-lg-row">
+                            <ul
+                                class="navbar-nav text-left flex-grow-1 fw-bold text-white my-5">
+                                <li class="col- nav-item mx-lg-4 mx-2 my-2">
+                                    <a href="#home" class="nav-link">Home</a>
+                                </li>
+                                <li class="col- nav-item mx-lg-4 mx-2">
+                                    <a href="#classes" class="nav-link">Classes</a>
+                                </li>
+                                <li class="col- nav-item mx-lg-4 mx-2">
+                                    <a href="#schedule" class="nav-link">Schedule</a>
+                                </li>
+                                <li class="col- nav-item mx-lg-4 mx-2">
+                                    <a href="#trainer" class="nav-link">Trainer</a>
+                                </li>
+                                <li class="col- nav-item mx-lg-4 mx-2">
+                                    <a href="#services" class="nav-link">Services</a>
+                                </li>
+                                <li class="col- nav-item mx-lg-4 mx-2 ">
+                                    <a href="#contact" class="nav-link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="main" style="overflow: auto;">
+            <!-- hero section / banner section -->
+            <section class="hero-section container-fluid bg-secondary text-white h-100" id="home">
+                <div class="container">
+                    <div class="row d-flex justify-content-between align-items-center text-center p-md-5 p-3">
+                        <div class="mt-5">
+                            <h1 class="display-md-2 display-1 mx-auto fw-bold mb-2">Fitness Help Me Feel Better</h1>
+                        </div>
+                        <div class="container mx-auto">
+                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Suscipit
+                                nostrum animi minus facere dolorem, porro commodi provident minima rem quo voluptates
+                                error?</p>
+                        </div>
+                        <div>
+                            <p class="text-center">
+                                <a href="#" class="btn btn-outline-light py-lg-3 px-4 px-lg-5" type="btn">Get
+                                    Started</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- home section -->
+            <section class="hero-section container-fluid bg-light mb-4">
+                <div class="container d-flex flex-column justify-content-around">
+                    <div class="row d-flex justify-content-center text-center m-lg-5 m-3">
+                        <div class="col-12">
+                            <span class="subheading fw-bold fs-4">Stay Healthy</span>
+                            <h2 class="section-heading display-4 fw-bold">Setup Your Body With Workout</h2>
+                            <p class="lead m-0 p-0 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                                aspernatur nesciunt itaque placeat cum nobis quaerat debitis eius molestias, harum unde
+                                eligendi, voluptates reiciendis neque deserunt ad dolor architecto delect!</p>
+                        </div>
+                    </div>
+                    <!-- owl carousel -->
+                    <div class="row justify-content-center align-items-center p-0 m-0">
+                        <div class="owl-carousel owl-theme">
+                            <!-- owl carousel items -->
+                            <div class="item me-3">
+                                <!-- card -->
+                                <div class="card d-flex flex-column align-items-center border-0 shadow-sm">
+                                    <img src="./images/cards/001-gym.png" class="card-img-top img-fluid p-3"
+                                        alt="Gym Image" style="width: 30%;">
+                                    <!-- card body -->
+                                    <div class=" card-body p-2 m-3">
+                                        <h3>Veritatis quo</h3>
+                                        <p class="card-text fs-8">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit. Nihil vitae repudiandae architecto!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item me-3">
+                                <!-- card -->
+                                <div class="card d-flex justify-content-center align-items-center border-0 shadow-sm">
+                                    <img src="./images/cards/002-swings.png" class="card-img-top img-fluid p-3"
+                                        alt="Gym Image" style="width: 30%;">
+                                    <!-- card body -->
+                                    <div class=" card-body p-2 m-3">
+                                        <h3>Perspicitis modi</h3>
+                                        <p class="card-text fs-8">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit. Nihil vitae repudiandae architecto!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item me-3">
+                                <!-- card -->
+                                <div class="card d-flex justify-content-center align-items-center border-0 shadow-sm">
+                                    <img src="./images/cards/carrot-cake.png" class="card-img-top img-fluid p-3"
+                                        alt="cake Image" style="width: 30%;">
+                                    <!-- card body -->
+                                    <div class=" card-body p-2 m-3">
+                                        <h3>Veritatis quo</h3>
+                                        <p class="card-text fs-8">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit. Nihil vitae repudiandae architecto!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item me-3">
+                                <!-- card -->
+                                <div class="card d-flex justify-content-center align-items-center border-0 shadow-sm">
+                                    <img src="./images/cards/weightlifting.png" class="card-img-top img-fluid p-3"
+                                        alt="weightlifting Image" style="width: 30%;;">
+                                    <!-- card body -->
+                                    <div class=" card-body p-2 m-3">
+                                        <h3>Hasmous otus da</h3>
+                                        <p class="card-text fs-8">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit. Nihil vitae repudiandae architecto!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item me-3">
+                                <!-- card -->
+                                <div class="card d-flex justify-content-center align-items-center border-0 shadow-sm">
+                                    <img src="./images/cards/orange-juice.png" class="card-img-top img-fluid p-3"
+                                        alt="orange-juice Image" style="width: 30%;;">
+                                    <!-- card body -->
+                                    <div class=" card-body p-2 m-3">
+                                        <h3>Consectuar quo</h3>
+                                        <p class="card-text fs-8">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit. Nihil vitae repudiandae architecto!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item me-3">
+                                <!-- card -->
+                                <div class="card d-flex justify-content-center align-items-center border-0 shadow-sm">
+                                    <img src="./images/cards/stationary-bike.png" class="card-img-top img-fluid p-3"
+                                        alt="stationary-bike Image" style="width: 30%;;">
+                                    <!-- card body -->
+                                    <div class=" card-body p-2 m-3">
+                                        <h3>Recuasciduas ab eius</h3>
+                                        <p class="card-text fs-8">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit. Nihil vitae repudiandae architecto!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- image section1 -->
+            <section class="hero-section-image mb-4">
+                <div class="wrapper"
+                    style="background-image: url('./images/website/bg_1.jpg');  background-position: center;">
+                    <div class="img-section">
+                        <div class="container">
+                            <div class="row justify-content-center align-items-center text-center text-white">
+                                <div class="col-md-7">
+                                    <h2 class="display-5 mt-5 mb-3 fw-bold">Get The Result You Want</h2>
+                                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.Necessitatibus consequatur cum praesentium fugiat, maxime tempore autem
+                                        fuga incidunt, accusantium voluptatem, totam illo ut adipisci placeat.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- classes section -->
+            <section class="hero-section container-fluid bg-light mb-4" id="classes">
+                <div class="container d-flex flex-column">
+                    <div class="row d-flex justify-content-center text-center m-lg-5 m-3 mb-4">
+                        <div class="col-12">
+                            <span class="subheading fw-bold fs-4">Fitness Class</span>
+                            <h2 class="section-heading display-4 fw-bold">Our Classes</h2>
+                            <p class="lead m-0 p-0 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                                aspernatur nesciunt itaque placeat cum nobis quaerat debitis eius molestias, harum unde
+                                eligendi!</p>
+                        </div>
+                    </div>
+                    <!-- Classes List -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="class-item d-flex align-items-center overflow-hidden">
+                                <a href="#">
+                                    <img src="./images/classes images/class-img1.jpg" class="img-fluid" alt="Image1"
+                                        style="width: 100px; height: 100px;">
+                                </a>
+                                <div class="px-3">
+                                    <h2 class="fs-5 fw-normal">Fitness class Name #1</h2>
+                                    <span class="lead fs-6">By Justin Daniel</span>
+                                    <span class="lead fs-6">30 minutes</span>
+                                </div>
+                            </div>
+                            <div class="class-item d-flex align-items-center overflow-hidden">
+                                <a href="#">
+                                    <img src="./images/classes images/class-img2.jpg" class="img-fluid" alt="Image1"
+                                        style="width: 100px; height: 100px;">
+                                </a>
+                                <div class="px-3">
+                                    <h2 class="fs-5 fw-normal">Fitness class Name #2</h2>
+                                    <span class="lead fs-6">By Justin Daniel</span>
+                                    <span class="lead fs-6">30 minutes</span>
+                                </div>
+                            </div>
+                            <div class="class-item d-flex align-items-center overflow-hidden">
+                                <a href="#">
+                                    <img src="./images/classes images/class-img3.jpg" class="img-fluid" alt="Image1"
+                                        style="width: 100px; height: 100px;">
+                                </a>
+                                <div class="px-3">
+                                    <h2 class="fs-5 fw-normal">Fitness class Name #3</h2>
+                                    <span class="lead fs-6">By Justin Daniel</span>
+                                    <span class="lead fs-6">30 minutes</span>
+                                </div>
+                            </div>
+                            <div class="class-item d-flex align-items-center overflow-hidden">
+                                <a href="#">
+                                    <img src="./images/classes images/class-img4.jpg" class="img-fluid" alt="Image1"
+                                        style="width: 100px; height: 100px;">
+                                </a>
+                                <div class="px-3">
+                                    <h2 class="fs-5 fw-normal">Fitness class Name #4</h2>
+                                    <span class="lead fs-6">By Justin Daniel</span>
+                                    <span class="lead fs-6">30 minutes</span>
+                                </div>
+                            </div>
+                            <div class="class-item d-flex align-items-center overflow-hidden">
+                                <a href="#">
+                                    <img src="./images/classes images/class-img1.jpg" class="img-fluid" alt="Image1"
+                                        style="width: 100px; height: 100px;">
+                                </a>
+                                <div class="px-3">
+                                    <h2 class="fs-5 fw-normal">Fitness class Name #5</h2>
+                                    <span class="lead fs-6">By Justin Daniel</span>
+                                    <span class="lead fs-6">30 minutes</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="class-item d-flex align-items-center overflow-hidden">
+                                <a href="#">
+                                    <img src="./images/classes images/class-img1.jpg" class="img-fluid" alt="Image1"
+                                        style="width: 100px; height: 100px;">
+                                </a>
+                                <div class="px-3">
+                                    <h2 class="fs-5 fw-normal">Fitness class Name #1</h2>
+                                    <span class="lead fs-6">By Justin Daniel</span>
+                                    <span class="lead fs-6">30 minutes</span>
+                                </div>
+                            </div>
+                            <div class="class-item d-flex align-items-center overflow-hidden">
+                                <a href="#">
+                                    <img src="./images/classes images/class-img2.jpg" class="img-fluid" alt="Image1"
+                                        style="width: 100px; height: 100px;">
+                                </a>
+                                <div class="px-3">
+                                    <h2 class="fs-5 fw-normal">Fitness class Name #2</h2>
+                                    <span class="lead fs-6">By Justin Daniel</span>
+                                    <span class="lead fs-6">30 minutes</span>
+                                </div>
+                            </div>
+                            <div class="class-item d-flex align-items-center overflow-hidden">
+                                <a href="#">
+                                    <img src="./images/classes images/class-img3.jpg" class="img-fluid" alt="Image1"
+                                        style="width: 100px; height: 100px;">
+                                </a>
+                                <div class="px-3">
+                                    <h2 class="fs-5 fw-normal">Fitness class Name #3</h2>
+                                    <span class="lead fs-6">By Justin Daniel</span>
+                                    <span class="lead fs-6">30 minutes</span>
+                                </div>
+                            </div>
+                            <div class="class-item d-flex align-items-center overflow-hidden">
+                                <a href="#">
+                                    <img src="./images/classes images/class-img4.jpg" class="img-fluid" alt="Image1"
+                                        style="width: 100px; height: 100px;">
+                                </a>
+                                <div class="px-3">
+                                    <h2 class="fs-5 fw-normal">Fitness class Name #4</h2>
+                                    <span class="lead fs-6">By Justin Daniel</span>
+                                    <span class="lead fs-6">30 minutes</span>
+                                </div>
+                            </div>
+                            <div class="class-item d-flex align-items-center overflow-hidden">
+                                <a href="#">
+                                    <img src="./images/classes images/class-img1.jpg" class="img-fluid" alt="Image1"
+                                        style="width: 100px; height: 100px;">
+                                </a>
+                                <div class="px-3">
+                                    <h2 class="fs-5 fw-normal">Fitness class Name #5</h2>
+                                    <span class="lead fs-6">By Justin Daniel</span>
+                                    <span class="lead fs-6">30 minutes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- image section2 -->
+            <section class="hero-section-image mb-4">
+                <div class="wrapper"
+                    style="background-image: url('./images/website/bg_2.jpg');  background-position: center;">
+                    <div class="img-section">
+                        <div class="container">
+                            <div class="row justify-content-center align-items-center text-center text-white">
+                                <div class="col-md-7">
+                                    <h2 class="display-4 mt-5 mb-3 fw-bold">Every Step Counts</h2>
+                                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Necessitatibus consequatur cum praesentium fugiat, maxime tempore autem fuga
+                                        incidunt, accusantium voluptatem, totam illo ut adipisci placeat.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Schedule section -->
+            <section class="hero-section container-fluid bg-light mb-4" id="schedule">
+                <div class="container d-flex flex-column">
+                    <!-- Schedule Heading -->
+                    <div class="row d-flex justify-content-center text-center m-lg-5 m-3 mb-4">
+                        <div class="col-12">
+                            <span class="subheading fw-bold fs-4">Fitness Sched</span>
+                            <h2 class="section-heading display-4 fw-bold">Schedule</h2>
+                            <p class="lead m-0 p-0 fs-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+                                beatae ea quis corrupti reiciendis eum eligendi non ducimus omnis? Ipsam eligendi ad sit
+                                dicta, eius deserunt aperiam rem libero modi.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Schedule nav List -->
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="nav day d-flex flex-row align-items-center justify-content-center text-center"
+                                role="tablist">
+                                <li class="nav-item flex-grow-1">
+                                    <a href="#nav-sunday" class="nav-link active" data-bs-toggle="tab">S</a>
+                                </li>
+                                <li class="nav-item flex-grow-1">
+                                    <a href="#nav-monday" class="nav-link" data-bs-toggle="tab">M</a>
+                                </li>
+                                <li class="nav-item flex-grow-1">
+                                    <a href="#nav-tuesday" class="nav-link" data-bs-toggle="tab">T</a>
+                                </li>
+                                <li class="nav-item flex-grow-1">
+                                    <a href="#nav-wednesday" class="nav-link" data-bs-toggle="tab">W</a>
+                                </li>
+                                <li class="nav-item flex-grow-1">
+                                    <a href="#nav-friday" class="nav-link" data-bs-toggle="tab">T</a>
+                                </li>
+                                <li class="nav-item flex-grow-1">
+                                    <a href="#nav-saturday" class="nav-link" data-bs-toggle="tab">F</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane container active fade bg-light" id="nav-sunday">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="class-item d-flex align-items-center ">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Sunday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #1</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img2.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Sunday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #2</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img3.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Sunday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #3</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img4.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Sunday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #4</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Sunday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #5</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Sunday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #1</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img2.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Sunday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #2</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img3.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Sunday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #3</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img4.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Sunday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #4</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Sunday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #5</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade bg-light" id="nav-monday">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img2.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Monday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #2</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center ">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Monday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #1</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img3.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Monday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #3</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Monday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #5</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img4.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Monday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #4</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img2.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Monday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #2</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Monday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #1</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img3.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Monday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #3</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Monday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #5</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img4.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Monday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #4</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade bg-light" id="nav-tuesday">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img3.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Tuesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #3</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img2.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Tuesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #2</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Tuesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #1</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Tuesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #5</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img4.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Tuesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #4</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img3.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Tuesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #3</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img2.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Tuesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #2</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Tuesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #1</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Tuesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #5</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img4.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Tuesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #4</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade bg-light" id="nav-wednesday">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img4.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Wednesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #4</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img3.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Wednesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #3</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img2.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Wednesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #2</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Wednesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #1</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Wednesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #5</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img4.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Wednesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #4</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img3.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Wednesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #3</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img2.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Wednesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #2</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Wednesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #1</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Wednesday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #5</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade bg-light" id="nav-thursday">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Thursday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #5</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img3.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Thursday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #3</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img2.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Thursday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #2</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Thursday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #1</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img4.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Thursday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #4</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Thursday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #5</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img3.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Thursday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #3</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img2.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Thursday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #2</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Thursday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #1</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img4.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Thursday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #4</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade bg-light" id="nav-friday">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img3.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Friday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #3</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img2.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Friday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #2</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Friday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #1</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Friday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #5</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img4.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Friday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #4</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img3.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Friday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #3</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img2.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Friday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #2</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Friday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #1</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Friday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #5</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img4.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Friday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #4</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade bg-light" id="nav-saturday">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Saturday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #1</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img3.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Saturday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #3</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img2.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Saturday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #2</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Saturday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #5</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img4.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Saturday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #4</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Saturday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #1</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img3.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Saturday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #3</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img2.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Saturday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #2</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img1.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Saturday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #5</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                    <div class="class-item d-flex align-items-center overflow-hidden">
+                                        <a href="#">
+                                            <img src="./images/classes images/class-img4.jpg" class="img-fluid"
+                                                alt="Image1" style="width: 100px; height: 100px;">
+                                        </a>
+                                        <div class="px-3">
+                                            <span class="lead fs-6">Saturday 7:30am - 9:00am</span>
+                                            <h2 class="fs-5 fw-normal">Fitness class Name #4</h2>
+                                            <span class="lead fs-6">By Justin Daniel</span>
+                                            <span class="lead fs-6">30 minutes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- image section3 -->
+            <section class="hero-section-image mb-4">
+                <div class="wrapper"
+                    style="background-image: url('./images/website/bg_3.jpg');  background-position: center;">
+                    <div class="img-section">
+                        <div class="container">
+                            <div class="row justify-content-center align-items-center text-center text-white">
+                                <div class="col-md-7">
+                                    <h2 class="display-4 mt-5 mb-3 fw-bold">Your Fitness Partner Where Ever You Are</h2>
+                                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Necessitatibus consequatur cum praesentium fugiat, maxime tempore autem
+                                        fincidunt, accusantium voluptatem, totam illo ut adipisci placeat.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Trainer section -->
+            <section class="hero-section container-fluid bg-light mb-4" id="trainer">
+                <div class="container d-flex flex-column">
+                    <!-- Trainer Heading -->
+                    <div class="row d-flex justify-content-center text-center m-lg-5 m-3 mb-4">
+                        <div class="col-12">
+                            <span class="subheading fw-bold fs-4">Trainer</span>
+                            <h2 class="section-heading display-4 fw-bold">Our Trainers</h2>
+                            <p class="lead m-0 p-0 fs-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+                                beatae ea quis corrupti reiciendis eum eligendi non ducimus omnis? Ipsam eligendi ad sit
+                                dicta, eius deserunt aperiam rem libero modi.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Trainer List -->
+                    <div class="row mt-5 mb-3">
+                        <div class="col-lg-3 mb-3 mb-lg-0 text-center">
+                            <div>
+                                <img src="./images/trainers/person_1.jpg" alt="person_1"
+                                    class="img-fluid rounded-circle" style="width: 100px; height: 100px;">
+                                <h3>Justin Daniel</h3>
+                                <p>Trainer</p>
+                                <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem at,
+                                    accusantium atque laborum! "</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-3 mb-lg-0 text-center">
+                            <div>
+                                <img src="./images/trainers/person_3.jpg" alt="person_1"
+                                    class="img-fluid rounded-circle" style="width: 100px; height: 100px;">
+                                <h3>Mattew Davidson</h3>
+                                <p>Trainer</p>
+                                <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem at,
+                                    accusantium atque laborum! "</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-3 mb-lg-0 text-center">
+                            <div>
+                                <img src="./images/trainers/person_2.jpg" alt="person_1"
+                                    class="img-fluid rounded-circle" style="width: 100px; height: 100px;">
+                                <h3>Mattew Davidson</h3>
+                                <p>Trainer</p>
+                                <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem at,
+                                    accusantium atque laborum! "</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-3 mb-lg-0 text-center">
+                            <div>
+                                <img src="./images/trainers/person_4.jpg" alt="person_1"
+                                    class="img-fluid rounded-circle" style="width: 100px; height: 100px;">
+                                <h3>Mattew Davidson</h3>
+                                <p>Trainer</p>
+                                <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem at,
+                                    accusantium atque laborum! "</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services section -->
+            <section class="hero-section container-fluid bg-light mb-4" id="services">
+                <div class="container d-flex flex-column">
+                    <!-- Services Heading -->
+                    <div class="row d-flex justify-content-center text-center m-lg-5 m-3 mb-4">
+                        <div class="col-12">
+                            <span class="subheading fw-bold fs-4">Fitness Services</span>
+                            <h2 class="section-heading display-4 fw-bold">Services</h2>
+                            <p class="lead m-0 p-0 fs-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+                                beatae ea quis corrupti!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Services List -->
+                    <div class="row mt-5 mb-3 justify-content-center">
+                        <div class="service-card col-lg-3 mb-4 col-md-5 text-center m-1">
+                            <div class="">
+                                <img src="./images/cards/weightlifting.png" alt="person_1"
+                                    class="img-center img-fluid mt-2 p-3" style="width: 100px; height: 100px;">
+                                <div class="p-4">
+                                    <h2 class="fw-normal text-dark">Be Fit</h2>
+                                    <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem
+                                        at, accusantium atque laborum! "</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card col-lg-3 mb-4 col-md-5 text-center m-1">
+                            <div class="">
+                                <img src="./images/cards/001-gym.png" alt="person_1"
+                                    class="img-center img-fluid mt-2 p-3" style="width: 100px; height: 100px;">
+                                <div class="p-4">
+                                    <h2 class="fw-normal text-dark">Join Club</h2>
+                                    <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem
+                                        at, accusantium atque laborum! "</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card col-lg-3 mb-4 col-md-5 text-center m-2">
+                            <div class="">
+                                <img src="./images/cards/carrot-cake.png" alt="person_1"
+                                    class="img-center img-fluid mt-2 p-3" style="width: 100px; height: 100px;">
+                                <div class="p-4">
+                                    <h2 class="fw-normal text-dark">Eat Vegie</h2>
+                                    <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem
+                                        at, accusantium atque laborum! "</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card col-lg-3 mb-4 col-md-5 text-center m-2">
+                            <div class="">
+                                <img src="./images/cards/002-swings.png" alt="person_1"
+                                    class="img-center img-fluid mt-2 p-3" style="width: 100px; height: 100px;">
+                                <div class="p-4">
+                                    <h2 class="fw-normal text-dark">Gym Fitness</h2>
+                                    <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem
+                                        at, accusantium atque laborum! "</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card col-lg-3 mb-4 col-md-5 text-center m-2">
+                            <div class="">
+                                <img src="./images/cards/orange-juice.png" alt="person_1"
+                                    class="img-center img-fluid mt-2 p-3" style="width: 100px; height: 100px;">
+                                <div class="p-4">
+                                    <h2 class="fw-normal text-dark">Fruit Juices</h2>
+                                    <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem
+                                        at, accusantium atque laborum! "</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card col-lg-3 mb-4 col-md-5 text-center m-2">
+                            <div class="">
+                                <img src="./images/cards/stationary-bike.png" alt="person_1"
+                                    class="img-center img-fluid mt-2 p-3" style="width: 100px; height: 100px;">
+                                <div class="p-4">
+                                    <h2 class="fw-normal text-dark">Body Warmup</h2>
+                                    <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem
+                                        at, accusantium atque laborum! "</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact section -->
+            <section class="hero-section container-fluid bg-light mb-4" id="contact">
+                <div class="container d-flex flex-column">
+                    <!-- Contact Heading -->
+                    <div class="row d-flex justify-content-center text-center m-lg-5 m-3 mb-4">
+                        <div class="col-12">
+                            <span class="subheading fw-bold fs-4">Get in Touch</span>
+                            <h2 class="section-heading display-4 fw-bold">Contact Us</h2>
+                            <p class="lead m-0 p-0 fs-6">Far far away, behind the word mountains, far from countries
+                                Vokalia and consoniantia, ther live the blind texts.</p>
+                        </div>
+                    </div>
+                    <!-- contact us form -->
+                    <div class="row justify-content-center">
+                        <div class="col-md-7">
+                            <form action="#" class="">
+                                <div class="form-group row">
+                                    <div class="col-md-6 mb-3 mb-lg-0">
+                                        <input type="text"
+                                            class="form-control border border-2 border-secondary rounded-0 mb-3"
+                                            placeholder="First Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text"
+                                            class="form-control border border-2 border-secondary rounded-0 mb-3"
+                                            placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-12">
+                                        <input type="text"
+                                            class="form-control border border-2 border-secondary rounded-0 mb-3"
+                                            placeholder="Subject">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-12">
+                                        <input type="email"
+                                            class="form-control border border-2 border-secondary rounded-0 mb-3"
+                                            placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-12">
+                                        <textarea class="form-control border border-2 border-secondary rounded-0 mb-3"
+                                            cols="30" rows="10" placeholder="Write your message here"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <button type="button"
+                                            class="form-control btn btn-primary px-5 py-3 btn-block w-100">Send
+                                            Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- footer section -->
+            <footer class="hero-section bg-secondary py-5 m-0">
+                <div class="d-flex ">
+                    <div class="row container my-5 py-5 ps-0 ms-1">
+                        <div class="col-md-5 col-12">
+                            <div>
+                                <h5 class="fw-bold text-uppercase text-white">About workout</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quae eveniet earum
+                                    similique temporibus voluptatum ab fugit asperiores iusto distinctio!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-12">
+                            <div>
+                                <h5 class="fw-bold text-uppercase text-white">Links</h5>
+                                <div>
+                                    <ul>
+                                        <li>Home</li>
+                                        <li>Classes</li>
+                                        <li>Schedule</li>
+                                        <li>Trainer</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <h5 class="fw-bold text-uppercase text-white">Subscribe</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quae eveniet earum
+                                similique temporibus voluptatum ab fugit asperiores iusto distinctio!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center text-center">
+                    <p>Copyright &copy; 2023 All right Reserved | <br>Made By <a href="#"
+                            class="text-warning text-decoration-none fw-bold fs-5 ps-2">Saurabh</a> </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- script for sticky nav -->
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        });
+    </script>
+    <!-- script for owl carousel -->
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            margin: 20,
+            loop: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
